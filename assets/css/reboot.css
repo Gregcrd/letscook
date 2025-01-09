@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    border: dashed 1px white;
+    background-color: rgba(0,0,0,0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
