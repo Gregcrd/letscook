@@ -1,2 +1,39 @@
 @import 'variables.css';
 @import 'reboot.css';
+@import 'utilites.css';
+@import 'custom.css';
+
+
+/* COMPONENTS */
+.recipe-card {
+    width: calc(25% - 20px);
+    background: #fff;
+    color: rgb(65, 65, 65);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recipe-card__title {
+    margin: 10px 0;
+}
+
+.recipe-card__desc {
+    margin: 0 0 10px;
+}
+
+.recipe-card__button {
+    cursor: pointer;
+    border: none;
+}

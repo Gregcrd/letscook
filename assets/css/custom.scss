@@ -2,13 +2,12 @@ a {
     color: #FFF;
     text-decoration: none;
     transition: all 0.3s ease;
-  }
-  
-  a:hover {
+}
+a:hover {
     color: #491515;
-  }
-  
-  .recipe {
+}
+
+.recipe {
     background: rgb(65, 65, 65);
     padding: 20px;
     border-radius: 10px;
@@ -17,75 +16,78 @@ a {
     align-items: center;
     justify-content: space-between;
     transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .recipe:hover {
+}
+.recipe:hover {
     transform: scale(1.05);
     background-color: rgb(85, 85, 85);
-  }
-  
-  .recipe h2 {
+}
+
+.recipe h2 {
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
-  }
-  
-  .recipe img {
+}
+
+.recipe img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     margin: 15px 0;
-  }
-  
-  .recipe p {
+}
+
+.recipe p {
     text-align: center;
     font-size: 18px;
     font-weight: 600;
-  }
-  
-  .recipe span {
+}
+.recipe span {
     font-size: 14px;
     font-weight: 400;
-  }
-  
-  .recipes {
+}
+
+.recipes {
     display: grid;
     gap: 20px;
-  }
-  
-  @media (max-width: 599px) {
+}
+@media (max-width: 599px) {
     .recipes {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+        img {
+            max-width: 80vw;
+        }
     }
-    .recipes img {
-      max-width: 80vw;
-    }
-  }
-  @media (min-width: 600px) and (max-width: 1023px) {
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
     .recipes {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
     }
-    .main__header h2 {
-      display: none !important;
+
+    .main__header {
+        h2 {
+            display: none !important; 
+        }
     }
-  }
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     .recipes {
-      grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); 
     }
-  }
-  .search-form {
+}
+
+.search-form {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-  }
-  
-  .search-form input,
-  .search-form button,
-  .search-form select {
+}
+.search-form input,
+.search-form button,
+.search-form select {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }/*# sourceMappingURL=custom.css.map */
+}
+

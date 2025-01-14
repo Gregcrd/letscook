@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Cook</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <header>HEADER</header>
-    <main>
-        <div class="container_header">
-          
-          <input type="search" name="" id="searchInput" placeholder="Rechercher une recette...">
-          <button id="searchButton">Rechercher</button>
-          <select id="limitSelect">
-            <option value="10">Afficher 10 recettes</option>
-            <option value="20">Afficher 20 recettes</option>
-            <option value="30">Afficher 30 recettes</option>
-        </select>
-        </div>
+<body class="main-color bg-color-m flex aic fdc">
+    <header class="header flex jcsb fz-16 p-1 aic fg">
+        <div class="header__logo flex fg">
+            <h1 class="header__title fz-16 m-1">
+                Let's Cook
+            </h1>
+        </div> 
+        <nav class="header__nav flex fw-600 aic fg">
+            <div class="header__link m-1"><a href="index.html">Home</a></div>
+            <div class="header__link main-color"><a href="newRecipe">Add a recipe</a></div>
+        </nav>
+    </header>
+   
 
-        <div class="recipes contaner_menu mx-auto py-2">
-            <!-- contenu de JS -->
-        </div>
-        <footer>
+    <main class="main-1">
+        <header class="main__header flex jcsb bg-color-s p-2 br-1 mb-2">
+            <form action="#" class="search-form flex aic ns">
+                <input type="search" name="search" id="searchInput" placeholder="Rechercher une recette..."
+                    class="search-input br-1">
+                <button id="searchButton">Rechercher</button>
+                <select name="first-select" id="limitSelect" class="br-1">
+                    <option value="10">Afficher 10 recettes</option>
+                    <option value="20">Afficher 20 recettes</option>
+                    <option value="30">Afficher 30 recettes</option>
+                </select>
+            </form>
 
-        </footer>
+        </header>
 
+            <h1 class="main__title">
+                All recipes
+            </h1>
+            <div class="recipes container flex fw g-1">
+
+            </div>
     </main>
-    <footer>FOOTER</footer>
-    <script src="./assets/js/index.js"></script>
+    <footer class="footer">
+        Droits reservés
+    </footer>
+
+    <script src="./assets/js/correctionDeMonIndex.js"></script>
 </body>
+
 </html>

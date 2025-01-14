@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Let's cook" - les Recettes de Cuisine pour la Famille</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="main-color bg-color-m flex aic fdc">
+    <header class="header flex jcsb fz-16 p-1 aic fg">
+        <div class="header__logo flex fg">
+            <h1 class="header__title fz-16 m-1">
+                Let's Cook
+            </h1>
+        </div> 
+        <nav class="header__nav flex fw-600 aic fg">
+            <div class="header__link m-1"><a href="index.html">Home</a></div>
+            <div class="header__link main-color"><a href="newRecipe">Add a recipe</a></div>
+        </nav>
+    </header>
+    <main class="main m-1">
+        <header class="main__header flex jcsb bg-color-s p-2 br-1 mb-2">
+            <form action="#" class="search-form flex aic ns">
+                <input type="search" name="search" class="search-input br-1" placeholder="Search for recipes..." />
+                <select name="first-select" id="first-select" class="br-1">
+                    <option value="12">12 par page</option>
+                    <option value="24">24 par page</option>
+                    <option value="30">30 par page</option>
+                </select>
+                <select name="second-select" id="second-select" class="br-1 m-1">
+                    <option value="sortBy=name&order=asc">Trier par nom croissant</option>
+                    <option value="sortBy=name&order=desc">Trier par nom decroissant</option>
+                    <option value="sortBy=id&order=asc">Trier par date croissant</option>
+                    <option value="sortBy=id&order=desc">Trier par date decroissant</option>    
+                </select>
+            </form>
+        </header>
+        <h1 class="main__title">
+            All recipes
+        </h1>
+        <div class="recipes container flex fw g-1">
+            <!-- Mobile 1 col -->
+            <!-- Tablette 2 col --> 
+            <!-- Desktop 4 col -->
+        </div>
+    </main>
+    <footer class="footer">
+        All rights reserved.
+    </footer>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
